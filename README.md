@@ -23,7 +23,7 @@ Para utilizar este projeto, é necessário ter o Docker e o Docker Compose insta
 
 1.  Clone este repositório na sua máquina:
     
-    `wget https://github.com/exemplo/projeto-docker-compose.git`
+    `wget https://github.com/docker-microservices/projeto-docker-compose.git`
     
 2.  Na raiz do projeto, execute o seguinte comando:
     
