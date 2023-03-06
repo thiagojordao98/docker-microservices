@@ -1,8 +1,10 @@
-CREATE TABLE dados (
-    AlunoID int,
-    Nome varchar(50),
-    Sobrenome varchar(50),
-    Endereco varchar(150),
-    Cidade varchar(50),
-    Host varchar(50)
+CREATE TABLE clientes (
+  ClienteID INT NOT NULL AUTO_INCREMENT,
+  Nome VARCHAR(100) NOT NULL,
+  Email VARCHAR(100) NOT NULL,
+  Endereco VARCHAR(50) NOT NULL,
+  Cidade VARCHAR(50) NOT NULL,
+  Host VARCHAR(50),
+  PRIMARY KEY (clienteID)
 );
+

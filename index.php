@@ -13,10 +13,10 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "54.234.153.24";
+$servername = "host_ip";
 $username = "root";
-$password = "Senha123";
-$database = "meubanco";
+$password = "db_password";
+$database = "db_database";
 
 // Criar conexão
 
@@ -34,7 +34,7 @@ $valor_rand2 = strtoupper(substr(bin2hex(random_bytes(4)), 1));
 $host_name = gethostname();
 
 
-$query = "INSERT INTO dados (AlunoID, Nome, Sobrenome, Endereco, Cidade, Host) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2', '$valor_rand2','$host_name')";
+$query = "INSERT INTO Clientes (clienteID, Nome, Email, Endereco, Cidade, Host) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2', '$valor_rand2','$host_name')";
 
 
 if ($link->query($query) === TRUE) {
